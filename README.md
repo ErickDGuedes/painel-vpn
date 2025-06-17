@@ -119,5 +119,5 @@ sudo systemctl restart apache2.service
 
 /var/www/html/
 
->Agora, acesse o sistema usando o IP da sua máquina local via navegador.
+>Agora, teste o acesso ao sistema usando o IP da sua máquina local via navegador.
 
