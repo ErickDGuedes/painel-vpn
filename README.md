@@ -56,44 +56,44 @@ sudo systemctl status apache2.service
 sudo systemctl enable apache2.service
 ```
 ### 3. Instale o PHP
-
+```
 sudo apt install php -y
-
+```
 >Reinicie o serviço do apache2 para integrar o PHP
-
+```
 sudo systemctl restart apache2.service
-
+```
 ### 4. Instale o OpenSSL
-
+```
 sudo apt install openssl -y, p
-
+```
 ### 5. Habilite os módulos do Apache
-
+```
 sudo a2enmod ssl
 sudo a2enmod rewrite
-
+```
 ### 6. Edite o arquivo de configuração do Apache
-
+```
 sudo nano /etc/apache2/apache2.conf
-
+```
 >Adicione no final:
-
+```
 <Directory /var/www/html>
     AllowOverride ALL
 </Directory>
-
+```
 ### 7. Gere o certificado SSL
-
+```
 sudo mkdir /etc/apache2/certs
 cd /etc/apache2/certs
 sudo openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out apache.cert -keyout apache.key
-
+```
 ### 8. Configure o redirecionamento HTTPS
-
+```
 sudo nano /etc/apache2/sites-enabled/000-default.conf
-
+```
 > Adicione ou substitua o conteúdo por:
-
+```
 <VirtualHost *:80>
     RewriteEngine On
     RewriteCond %{HTTPS} off
@@ -109,11 +109,11 @@ sudo nano /etc/apache2/sites-enabled/000-default.conf
     SSLCertificateFile /etc/apache2/certs/apache.cert
     SSLCertificateKeyFile /etc/apache2/certs/apache.key
 </VirtualHost>
-
+```
 >Reinicie o Apache:
-
+```
 sudo systemctl restart apache2.service
-
+```
 ### 9.  Adicione os arquivos do projeto
 >Copie os arquivos do painel para:
 
