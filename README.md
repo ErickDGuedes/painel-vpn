@@ -37,7 +37,7 @@ Embora essas funcionalidades básicas já estejam implementadas, o sistema ainda
 
 ## Configuração da Máquina Virtual (VM)
 
-> Considerando que a VM já possui o serviço de OpenVPN instalado, precisa instalar os serviços do Apache2 e PHP, abaixo o passo a passo.
+> Considerando que a VM já possua o serviço de OpenVPN instalado, precisará instalar os serviços do Apache2 e PHP, abaixo o passo a passo.
 
 ### 1. Atualize os pacotes da VM
 ```
