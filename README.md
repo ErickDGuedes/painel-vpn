@@ -1,6 +1,6 @@
 # Painel VPN - Gerenciamento de Usuários e Certificados
 
-Este projeto é uma atividade de criação de um painel para gerenciar usuários através de uma VPN. Com o objetivo de permitir que funcionários e administradores controlem o acesso via certificados individuais.
+Este projeto é uma atividade de Laboratório de Redes de Computadores que consiste na criação de um painel para gerenciar usuários através de uma VPN. Com o objetivo de permitir que funcionários e administradores controlem o acesso via certificados individuais.
 O sistema está configurado para rodar em uma Máquina Virtual Linux, com Apache2 instalado para servir os arquivos PHP. O banco de dados utilizado é MySQL/MariaDB, também configurado dentro da VM.    
 
 Atualmente, o painel permite:
@@ -37,7 +37,7 @@ Embora essas funcionalidades básicas já estejam implementadas, o sistema ainda
 
 ## Configuração da Máquina Virtual (VM)
 
-> Considerando que a VM já possua o serviço de OpenVPN instalado, precisará instalar os serviços do Apache2 e PHP, abaixo o passo a passo.
+> Considerando que a VM já possua o serviço de OpenVPN instalado, precisará instalar os serviços do Apache2 e PHP, abaixo o passo a passo para execução no terminal de um ambiente Debian Linux.
 
 ### 1. Atualize os pacotes da VM
 ```
