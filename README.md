@@ -44,7 +44,7 @@ Embora essas funcionalidades básicas já estejam implementadas, o sistema ainda
 sudo apt update -y
 
 ### 2. Instale o Apache2
-
+```bash
 sudo apt install apache2 -y
 
 >Verifique se o serviço está ativo:
