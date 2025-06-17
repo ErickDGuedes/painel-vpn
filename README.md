@@ -42,19 +42,19 @@ Embora essas funcionalidades básicas já estejam implementadas, o sistema ainda
 ### 1. Atualize os pacotes da VM
 ```
 sudo apt update -y
-
+```
 ### 2. Instale o Apache2
 ```
 sudo apt install apache2 -y
-
+```
 >Verifique se o serviço está ativo:
-
+```
 sudo systemctl status apache2.service
-
+```
 >Caso não esteja:
-
+```
 sudo systemctl enable apache2.service
-
+```
 ### 3. Instale o PHP
 
 sudo apt install php -y
