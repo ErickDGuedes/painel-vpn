@@ -40,11 +40,11 @@ Embora essas funcionalidades básicas já estejam implementadas, o sistema ainda
 > Considerando que a VM já possui o serviço de OpenVPN instalado, precisa instalar os serviços do Apache2 e PHP, abaixo o passo a passo.
 
 ### 1. Atualize os pacotes da VM
-```bash
+```
 sudo apt update -y
 
 ### 2. Instale o Apache2
-```bash
+```
 sudo apt install apache2 -y
 
 >Verifique se o serviço está ativo:
