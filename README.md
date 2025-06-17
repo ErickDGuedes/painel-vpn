@@ -93,7 +93,7 @@ sudo openssl req -new -newkey rsa:4096 -x509 -sha256 -days 365 -nodes -out apach
 sudo nano /etc/apache2/sites-enabled/000-default.conf
 
 > Adicione ou substitua o conteúdo por:
-re
+
 <VirtualHost *:80>
     RewriteEngine On
     RewriteCond %{HTTPS} off
